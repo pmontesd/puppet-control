@@ -31,10 +31,8 @@ mod 'ntp',
 
 mod 'role',
   :git => 'https://github.com/pmontesd/puppet-role.git',
-  :ref => 'development',
-  :install_path => 'site'
+  :ref => 'development'
 
 mod 'profile',
   :git => 'https://github.com/pmontesd/puppet-profile.git',
-  :ref => 'development',
-  :install_path => 'site'
+  :ref => 'development'
