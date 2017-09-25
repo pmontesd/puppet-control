@@ -41,6 +41,6 @@ mod 'nginx',
   :git => 'https://github.com/pmontesd/puppet-nginx.git',
   :ref => 'master'
 
-mod 'puppet-syntax-vim',
-  :git => 'https://github.com/pmontesd/puppet-syntax-vim.git',
+mod 'puppet_syntax_vim',
+  :git => 'git@github.com:pmontesd/puppet-puppet_syntax_vim.git',
   :ref => 'master'
