@@ -26,18 +26,18 @@ File { backup => false }
 
 
 node 'pmontesd3.mylabserver' {
-  class { 'puppet_syntax': }
+  class { 'puppet-syntax-vim': }
   notify { 'This matches the node name': }
   class { 'java': }
 }
 
 node /^pmontesd3/ {
-  class { 'puppet_syntax': }
+  class { 'puppet-syntax-vim': }
   notify { "This is a node definition using regex!!!": }
 }
 
 node 'pmontesd1.mylabserver.com' {
-  class { 'puppet_syntax': }
+  class { 'puppet-syntax-vim': }
   include pe_repo::platform::el_6_x86_64
   include pe_repo::platform::ubuntu_1204_amd64
 }
@@ -46,5 +46,5 @@ node default {
   # This is where you can declare classes for all nodes.
   # Example:
   #   class { 'my_class': }
-  class { 'puppet_syntax': }
+  class { 'puppet-syntax-vim': }
 }
