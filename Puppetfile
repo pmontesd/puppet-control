@@ -40,3 +40,7 @@ mod 'profile',
 mod 'nginx',
   :git => 'https://github.com/pmontesd/puppet-nginx.git',
   :ref => 'master'
+
+mod 'puppet-vim-syntax',
+  :git => 'https://github.com/pmontesd/puppet-vim-syntax.git',
+  :ref => 'master'
