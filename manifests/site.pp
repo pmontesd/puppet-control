@@ -24,23 +24,6 @@ File { backup => false }
 # will be included in every node's catalog, *in addition* to any classes
 # specified in the console for that node.
 
-node 'pmontesd2.mylabserver.com' {
-  notify { 'test-message-for-pmontesd2': 
-    message => 'this is pmontesd2 using a node definition',
-  }
-}
-
-node 'pmontesd3' {
-  class { 'puppet_syntax_vim': }
-  notify { 'This matches pmontesd3': }
-  class { 'java': }
-}
-
-#node /^pmontesd3/ {
-#  class { 'puppet_syntax_vim': }
-#  notify { "This is a node definition using regex!!!": }
-#}
-
 node 'pmontesd1.mylabserver.com' {
   class { 'puppet_syntax_vim': }
   include pe_repo::platform::el_6_x86_64
