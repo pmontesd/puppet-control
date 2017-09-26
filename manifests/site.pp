@@ -31,10 +31,10 @@ node 'pmontesd3.mylabserver' {
   class { 'java': }
 }
 
-node /^pmontesd3/ {
-  class { 'puppet_syntax_vim': }
-  notify { "This is a node definition using regex!!!": }
-}
+#node /^pmontesd3/ {
+#  class { 'puppet_syntax_vim': }
+#  notify { "This is a node definition using regex!!!": }
+#}
 
 node 'pmontesd1.mylabserver.com' {
   class { 'puppet_syntax_vim': }
