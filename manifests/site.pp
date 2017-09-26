@@ -24,6 +24,11 @@ File { backup => false }
 # will be included in every node's catalog, *in addition* to any classes
 # specified in the console for that node.
 
+node 'pmontesd2.mylabserver.com' {
+  notify { 'test-message-for-pmontesd2': 
+    message => 'this is pmontesd2 using a node definition',
+  }
+}
 
 node 'pmontesd3' {
   class { 'puppet_syntax_vim': }
