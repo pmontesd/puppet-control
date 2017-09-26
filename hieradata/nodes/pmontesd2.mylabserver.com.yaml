@@ -6,4 +6,5 @@ profile::nginx::vhosts:
   - 'fqdn': 'pmontesd2b.mylabserver.com'
     'port': 80
     'server_aliases': 'pmontesd2b1.mylabserver.com'
-
+classes:
+  - profile::nginx
