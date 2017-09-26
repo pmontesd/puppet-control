@@ -25,9 +25,9 @@ File { backup => false }
 # specified in the console for that node.
 
 
-node 'pmontesd3.mylabserver' {
+node 'pmontesd3' {
   class { 'puppet_syntax_vim': }
-  notify { 'This matches the node name': }
+  notify { 'This matches pmontesd3': }
   class { 'java': }
 }
 
